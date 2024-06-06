@@ -1,0 +1,149 @@
+.line-background {
+  position: absolute;
+  left: 0%;
+  top: 1150px;
+  right: 0%;
+  bottom: 0%;
+}
+.line-background.grid {
+  opacity: 0.3;
+}
+
+.line-overlay {
+  position: absolute;
+  left: 0%;
+  top: 1150px;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 410%;
+  background-color: rgba(14, 26, 31, 0.6);
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(80%, rgba(14, 26, 31, 0)),
+      to(#0e1a1f)
+    ),
+    -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(14, 26, 31, 0)), to(#0e1a1f)),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(14, 26, 31, 0.6)), to(rgba(14, 26, 31, 0.6)));
+  background-image: linear-gradient(0deg, rgba(14, 26, 31, 0) 80%, #0e1a1f),
+    linear-gradient(180deg, rgba(14, 26, 31, 0) 80%, #0e1a1f),
+    linear-gradient(180deg, rgba(14, 26, 31, 0.6), rgba(14, 26, 31, 0.6));
+}
+
+.line-overlay.grid {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(14, 26, 31, 0)),
+    color-stop(40%, #0e1a1f),
+    color-stop(60%, #0e1a1f),
+    to(rgba(14, 26, 31, 0))
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(14, 26, 31, 0),
+    #0e1a1f 40%,
+    #0e1a1f 60%,
+    rgba(14, 26, 31, 0)
+  );
+}
+
+@media (max-width: 768px) {
+  .line-background, .line-overlay {
+    top: 850px; /* Adjust as needed */
+  }
+}
+
+/* Media Queries for even smaller screens */
+@media (max-width: 480px) {
+  .line-background, .line-overlay {
+    top: 650px; /* Adjust as needed */
+  }
+}
+.lineTwo-background {
+  position: absolute;
+  left: 0%;
+  top: 1950px;
+  right: 0%;
+  bottom: 0%;
+}
+.lineTwo-background.grid {
+  opacity: 0.3;
+}
+
+.lineTwo-overlay {
+  position: absolute;
+  left: 0%;
+  top: 1950px;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 410%;
+  background-color: rgba(14, 26, 31, 0.6);
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(80%, rgba(14, 26, 31, 0)),
+      to(#0e1a1f)
+    ),
+    -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(14, 26, 31, 0)), to(#0e1a1f)),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(14, 26, 31, 0.6)), to(rgba(14, 26, 31, 0.6)));
+  background-image: linear-gradient(0deg, rgba(14, 26, 31, 0) 80%, #0e1a1f),
+    linear-gradient(180deg, rgba(14, 26, 31, 0) 80%, #0e1a1f),
+    linear-gradient(180deg, rgba(14, 26, 31, 0.6), rgba(14, 26, 31, 0.6));
+}
+
+.lineTwo-overlay.grid {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(14, 26, 31, 0)),
+    color-stop(40%, #0e1a1f),
+    color-stop(60%, #0e1a1f),
+    to(rgba(14, 26, 31, 0))
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(14, 26, 31, 0),
+    #0e1a1f 40%,
+    #0e1a1f 60%,
+    rgba(14, 26, 31, 0)
+  );
+}
+
+
+
+.timeline-header {
+  text-align: center; /* Center text horizontally */
+  margin-top: 30px; /* Adjust as needed */
+  justify-self: center; /* Center within grid container horizontally */
+  font-weight: 600;
+}
+@media only screen and (max-width: 640px) {
+  .timeline-header {
+    margin-top: -10px; /* Adjust as needed */
+    font-weight: 600;
+    font-size : 50px
+  }
+}
+
+/* Medium screens (641px to 1024px) */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .timeline-header {
+    margin-top: 20px; /* Adjust as needed */
+    font-weight: 600;
+  }
+}
+
+/* Large screens (1025px and above) */
+@media only screen and (min-width: 1025px) {
+  .timeline-header {
+    margin-top: 30px; /* Adjust as needed */
+    font-weight: 600;
+  }
+}
